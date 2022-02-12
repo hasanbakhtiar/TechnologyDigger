@@ -1,0 +1,14 @@
+/* p:nth-child(5){
+    color: red;
+} */
+
+p{
+    color: red;
+}
+
+#text{
+color: black;
+}
+.test{
+    color: green;
+}

@@ -1,0 +1,22 @@
+/* https://caniuse.com/ */
+/* comment */
+.text{
+    color: red;
+    font-size: 5em;
+    /* 1em and 1rem = 16px */
+    font-weight: 1000;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace,sans-serif;
+    
+
+
+}
+.spc{
+    color: brown;
+}
+.my-text{
+    /* line-height: 20px;
+    letter-spacing: 40px; */
+    text-transform: capitalize;
+    color: green;
+}

@@ -1,0 +1,82 @@
+@import url('reset.css');
+/* @import 'reset.css'; */
+
+.box{
+    width: 100px;
+    height: 100px;
+    /* background-color: #79c13a; */
+    /* hexcolor -> 0123456789abcdef */
+    /* min -0 max -f */
+    /* red green blue  */
+    /* background-color: rgb(35, 35,100); */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* min - 0 max - 255  */
+
+}
+header{
+width: 100%;
+height: 20vh;
+background-color: #333;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+header .logo{
+width: 30%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+header .logo h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: aqua;
+}
+header nav{
+    width: 70%;
+
+}
+
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+header nav ul li a{
+    color: #333;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: 1px solid aqua;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+header nav ul li a:hover{
+    color: aqua;
+    background-color: #333;
+}
+
+.sec-1{
+    width: 100%;
+    height: 79vh;
+    background-image: url('../img/hero-img.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.hero-bg{
+    width: 100%;
+    height: 79vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.hero-bg h1{
+    color:#fff;
+    font-size: 40px;
+
+}

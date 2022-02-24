@@ -1,0 +1,139 @@
+// // section{
+// //     height: 100vh;
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: center;
+// //     .box{
+// //         width: 100px;
+// //         height: 100px;
+// //         background-color: red;
+// //         // X->horizontal
+// //         // Y->vertical
+// //         // transform: translateX(100px);
+// //         // transform: translateY(100px);
+// //         // transform:translate(100px,300px) ;
+// //         // transform: rotate(115deg);
+// //         // deg->degree derece
+// //         // transform: scaleY(3);
+// //         // transform: scaleX(3);
+// //         // transform: scale(2,3);
+// //         // transform: skewX(20deg);
+// //         // transform: skewY(20deg);
+// //         // transform: skew(20deg,40deg);
+// //         // matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+// //         // transform: matrix(1, -0.3, 0, 1, 100, 0);
+// // }
+// // }
+
+// header{
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     .box-main{
+//         width: 100px;
+//         height: 100px;
+//         background-color: red;
+//         // transition-property: width, height;
+//         // transition-duration: 1s;
+//         // transition-delay: 1s;
+//         transition: width 1s, height 2s, background-color 10s;
+//         &:hover{
+//             width: 200px;
+//             height: 200px;
+//             background-color: rebeccapurple;
+//         }
+//     }
+// }
+
+
+// #div1 {transition-timing-function: linear;}
+// #div2 {transition-timing-function: ease;}
+// #div3 {transition-timing-function: ease-in;}
+// #div4 {transition-timing-function: ease-out;}
+// #div5 {transition-timing-function: ease-in-out;}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+// h1::before{
+//  content: "Salam";
+//  color: red;
+// }
+
+// h1::after{
+//     content: "Salam";
+//     color: red;
+//    }
+   
+
+// .box{
+//     position: relative;
+//     transition: 1s;
+//     width: 100px;
+//     height: 300px;
+//     background-color: red;
+//     /* z-index: 1; */
+
+// }
+
+
+// .box::after{
+   
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: 100%;
+//     transition: 1s;
+//     height: 0;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     /* z-index: -1; */
+
+// }
+
+// .box:hover::after {
+   
+//     height: 100%;
+   
+// }
+
+
+
+.box{
+    position: relative;
+    transition: 1s;
+    width: 100px;
+    height: 300px;
+    background-color: red;
+    /* z-index: 1; */
+    &::after{
+   
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        transition: 1s;
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* z-index: -1; */
+    
+    }
+    &:hover::after {
+   
+        height: 100%;
+       
+    }
+
+}
+
+
+
+

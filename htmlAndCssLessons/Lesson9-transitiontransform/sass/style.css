@@ -1,0 +1,40 @@
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box {
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 100px;
+  height: 300px;
+  background-color: red;
+  /* z-index: 1; */
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* z-index: -1; */
+}
+
+.box:hover::after {
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */

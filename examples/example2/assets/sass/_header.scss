@@ -1,0 +1,57 @@
+header{
+    width: 100%;
+    height: 80px;
+    background-color: $myblue;
+ @include around();;
+    .logo{
+        width: 20%;
+        @include center()
+    }
+    nav{
+        width: 60%;
+        ul{
+            width: 100%;
+            @include evenly();
+
+            .main-menu{
+                position: relative;
+                
+
+                &:hover .submenu{
+                    opacity: 1;
+                    top: 20px;
+                    z-index: 2;
+                }
+                .submenu{
+                    z-index: 0;
+                    border: 1px solid #000;
+                    background-color: brown;
+                   transition: 1s;
+                    position: absolute;
+
+                    top: 100px;
+                    width: 100px;
+                    // display: none;
+                    display: flex;
+                    flex-direction: column;
+                    opacity: 0;
+                }
+            }
+            li{
+                a{
+                    transition: .5s;
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover{
+                        color: yellow;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+        }
+    }
+    .right-btns{
+        width: 20%;
+    }
+}

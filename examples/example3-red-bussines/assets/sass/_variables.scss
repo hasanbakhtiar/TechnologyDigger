@@ -1,0 +1,10 @@
+$brand-red: #d21e2b;
+$header-fs: 13px;
+$brand-fontfamliy: sans-serif;
+
+.line {
+    width: 100px;
+    height: 3px;
+    border-radius: 25%;
+    background-color: $brand-red;
+  }

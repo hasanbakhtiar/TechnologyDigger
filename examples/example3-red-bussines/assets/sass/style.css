@@ -1,0 +1,371 @@
+.line {
+  width: 100px;
+  height: 3px;
+  border-radius: 25%;
+  background-color: #d21e2b;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, body:not(i) {
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 96px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav {
+  width: 70%;
+}
+
+header nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li a {
+  font-size: 13px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #000;
+}
+
+header nav ul li a i {
+  margin-left: 5px;
+}
+
+.hero {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../img/hero-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero .hero-opacity {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero-opacity .text-box {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero-opacity .text-box * {
+  color: white;
+}
+
+.hero .hero-opacity .text-box h1 {
+  font-size: 58px;
+}
+
+.hero .hero-opacity .text-box button {
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 200px;
+  height: 45px;
+  background-color: #d21e2b;
+  border-radius: 20px;
+  border: none;
+}
+
+.hero .hero-opacity .text-box button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+.solution {
+  width: 100%;
+  height: 90vh;
+}
+
+.solution .solution-text-top {
+  height: 30vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.solution .solution-text-top .solution-text-box {
+  height: 20vh;
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.solution .solution-text-top .solution-text-box h2 {
+  line-height: 45px;
+  text-align: center;
+  font-size: 35px;
+  color: #000;
+  font-weight: bolder;
+}
+
+.solution .solution-text-top .solution-text-box p {
+  color: #d21e2b;
+  font-size: 15px;
+}
+
+.solution .solution-box-container {
+  width: 100%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.solution .solution-box-container .solution-box {
+  width: 250px;
+  height: 363px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.solution .solution-box-container .solution-box .icon-box {
+  width: 120px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #ffbaba), to(white));
+  background: linear-gradient(180deg, #ffbaba 29%, white 100%);
+}
+
+.solution .solution-box-container .solution-box .icon-box i {
+  font-size: 55px;
+  color: #d21e2b;
+}
+
+.solution .solution-box-container .solution-box h3 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.solution .solution-box-container .solution-box p {
+  color: #999;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.sales-box {
+  margin-top: 100px;
+  width: 100%;
+  height: 120vh;
+}
+
+.sales-box .salesbox-text-top {
+  height: 20vh;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 100px;
+}
+
+.sales-box .salesbox-text-top h2 {
+  font-size: 35px;
+  color: #000;
+  font-weight: bolder;
+}
+
+.sales-box .salesbox-text-top p {
+  color: #d21e2b;
+  font-size: 15px;
+}
+
+.sales-box .salesbox-text-top span {
+  color: #999;
+}
+
+.sales-box .salesbox-container-main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sales-box .salesbox-container-main .salesbox-container {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sales-box .salesbox-container-main .salesbox-container .salesbox-item {
+  width: 277px;
+  height: 470px;
+  background-color: #eee;
+  border: 1px solid #000;
+}
+/*# sourceMappingURL=style.css.map */

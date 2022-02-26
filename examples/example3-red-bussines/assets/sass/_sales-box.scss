@@ -1,0 +1,43 @@
+.sales-box {
+  margin-top: 100px;
+  width: 100%;
+  height: 120vh;
+  .salesbox-text-top {
+    height: 20vh;
+    width: 50%;
+    @include between();
+    flex-direction: column;
+    margin-left: 100px;
+    h2 {
+      font-size: 35px;
+      color: #000;
+      font-weight: bolder;
+    }
+
+    p {
+      color: $brand-red;
+      font-size: 15px;
+    }
+    span {
+      color: #999;
+    }
+  }
+  .salesbox-container-main {
+    width: 100%;
+    height: 100vh;
+    @include center();
+    align-items: center;
+    .salesbox-container {
+      width: 100%;
+      height: 50vh;
+     @include center();
+     align-items: center;
+      .salesbox-item {
+        width: 277px;
+        height: 470px;
+        background-color: #eee;
+        border: 1px solid #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+@-webkit-keyframes myAnimation {}
+
+@keyframes myAnimation {}.alert {
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #eee;
+  margin-bottom: 10px;
+}
+
+.alert p {
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.alert .warning {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.alert .warning i {
+  color: yellow;
+  -webkit-animation: alertAnimation 1s infinite;
+          animation: alertAnimation 1s infinite;
+}
+
+@-webkit-keyframes alertAnimation {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    border-radius: 50%;
+    background-color: red;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: red;
+  }
+}
+
+@keyframes alertAnimation {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    border-radius: 50%;
+    background-color: red;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: red;
+  }
+}
+/*# sourceMappingURL=style.css.map */

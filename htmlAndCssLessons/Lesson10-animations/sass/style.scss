@@ -1,0 +1,63 @@
+.box{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    // animation-name: myAnimation; //animasiyanin adidir
+    // animation-duration: 5s; //animasiyanin zamanidir
+    // animation-delay: 1s; //animasiyanin gecikmesidir
+    // animation-iteration-count: infinite; //animasiyanin sayidir
+    // animation: myAnimation 5s infinite;
+}
+@keyframes myAnimation{
+    // basic
+    // from{left: 0;}
+    // to{left: 500px;}
+
+    // general
+    // 0%{left: 0; top: 0; background-color: red;}
+    // 25%{left: 300px; top: 0; background-color: yellow;}
+    // 50%{left: 300px; top: 300px; background-color: green;}
+    // 75%{left: 0px; top: 300px; background-color: violet;}
+    // 100%{left: 0; top: 0; background-color: rgb(38, 0, 128);}
+}
+
+
+
+.alert{
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #eee;
+    margin-bottom: 10px;
+p{
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+    .warning{
+        margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #757575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    i{
+        color: yellow;
+        animation: alertAnimation 1s infinite;
+    }
+    @keyframes alertAnimation {
+        0%{transform: scale(0);border-radius: 50%; background-color: red;}
+        100%{transform: scale(1); color: red;}
+        
+        // 0%{transform: scale(0);}
+        // 50%{transform: scale(1); color: red;}
+        // 100%{transform: scale(0);}
+    }
+}
+}

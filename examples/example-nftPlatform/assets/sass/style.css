@@ -1,0 +1,19 @@
+.bg-con {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(143deg, #c75ce4 9%, #1d48fd 20%, black 46%);
+}
+
+.blur-bg {
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+
+nav {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+/*# sourceMappingURL=style.css.map */

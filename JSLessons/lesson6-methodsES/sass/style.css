@@ -1,0 +1,40 @@
+.container-img {
+  width: 300px;
+  height: 200px;
+  border: 3px solid #000;
+}
+
+.container-img, .container-img .box-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-img .box-img {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 150px;
+  border: 3px solid red;
+}
+
+.container-img .box-img img {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container-img .box-img:hover img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.container-img .box-img p {
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */

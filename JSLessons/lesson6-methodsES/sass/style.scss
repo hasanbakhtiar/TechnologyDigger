@@ -1,0 +1,27 @@
+.container-img{
+    width: 300px;
+    height: 200px;
+    border: 3px solid #000;
+    &,.box-img{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .box-img{
+        position: relative;
+        overflow: hidden;
+        width: 200px;
+        height: 150px;
+        border: 3px solid red;
+        img{
+            transition: 1s;
+        }
+        &:hover img{
+
+            transform: scale(1.5);
+        }
+        p{
+            position: absolute;
+        }
+    }
+}
